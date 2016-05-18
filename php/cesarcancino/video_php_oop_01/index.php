@@ -10,7 +10,6 @@
 	echo "Nombre: " . $persona->mostrar_nombre()."<br>";
 	echo "Edad: " . $persona->mostrar_edad()."<br>";	
 	echo "Nomero de personas: " . $persona->contar_nombres();
-
 	?>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <?php
 //creamos nuestra primera clase
 class Persona {
+	
 	//Creamos los atributos
 	private $nombre=array();
 	private $edad;
@@ -27,7 +28,6 @@ class Persona {
 		return count($this->nombre);
 	}
 	
-
 }
 // Creamos una instancia de la clase persona
 $persona = new Persona();
