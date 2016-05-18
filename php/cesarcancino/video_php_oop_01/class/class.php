@@ -31,4 +31,5 @@ class Persona {
 }
 // Creamos una instancia de la clase persona
 $persona = new Persona();
+//hola
 ?>
