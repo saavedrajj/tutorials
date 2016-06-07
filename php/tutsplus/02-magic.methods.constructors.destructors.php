@@ -1,6 +1,6 @@
 <?php 
 class MyClass {
-	// Class properties an methods go here
+	// Class properties and methods go here
 	public $prop1 = "I'm a class property!";
 
 	public function __construct()
