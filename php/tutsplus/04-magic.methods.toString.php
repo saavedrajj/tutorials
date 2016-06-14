@@ -1,24 +1,21 @@
 <?php 
 class MyClass {
-	// Class properties and methods go here
+	// Class properties
 	public $prop1 = "I'm a class property!";
 
-	public function __construct()
-	{
+	// Class methods  
+	public function __construct() {
 		echo 'The class "', __CLASS__, '" was initiated!<br/>';
 	}
 
-	public function __destruct()
-	{
+	public function __destruct() {
 		echo 'The class "', __CLASS__, '" was destroyed.<br />';
 	}
 
-	public function __toString()
-	{
+	public function __toString() {
 		echo "Using the toString method: ";
 		return $this->getProperty();
 	}
-	
 
 	public function setProperty($newval) {
 		$this->prop1 = $newval;
@@ -28,14 +25,15 @@ class MyClass {
 		return $this->prop1 . "<br/>";
 	}
 }
+
 // Create a new object
-$obj = new MyClass;
+$obj1 = new MyClass;
 
 // Output the object as a string
-echo $obj;
+echo $obj1;
 
 // Destroy the object
-unset($obj);
+unset($obj1);
 
 // Output a message at the end of the file
 echo "End of file.<br />";

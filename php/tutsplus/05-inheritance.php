@@ -1,20 +1,18 @@
 <?php 
 class MyClass {
-	// Class properties and methods go here
+	// Class properties
 	public $prop1 = "I'm a class property!";
 
-	public function __construct()
-	{
+	// Class methods
+	public function __construct() {
 		echo 'The class "', __CLASS__, '" was initiated!<br/>';
 	}
 
-	public function __destruct()
-	{
+	public function __destruct() {
 		echo 'The class "', __CLASS__, '" was destroyed.<br />';
 	}
 
-	public function __toString()
-	{
+	public function __toString() {
 		echo "Using the toString method: ";
 		return $this->getProperty();
 	}
@@ -29,6 +27,7 @@ class MyClass {
 }
 
 class MyOtherClass extends MyClass {
+	// Class methods
 	public function newMethod()
 	{
 		echo "From a new method in " . __CLASS__ . ".<br />";
