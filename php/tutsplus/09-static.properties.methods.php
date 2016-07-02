@@ -5,7 +5,7 @@ class MyClass
 	public $prop1 = "I'm a class property!";
 	
 	public static $count = 0;
-	
+
 	public function __construct() {
 		echo 'The class "', __CLASS__, '" was initiated!<br />';
 	}
