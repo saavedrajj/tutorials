@@ -6,6 +6,7 @@ class Animal
 
 	public function __get($var){
 		echo "Unavailable $var<br/>";
+				//trigger_error('Undefined property via __get:' . $var);
 	}
 }
 
