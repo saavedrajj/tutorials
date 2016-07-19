@@ -1,5 +1,4 @@
 <?php 
-
 class Loteria {
 	// Atributos
 	public $numero;
@@ -14,9 +13,9 @@ class Loteria {
 
 	public function sortear() {
 		$minimo = $this->numero / 2;
-		$maximo = $this->numero *2;
+		$maximo = $this->numero * 2;
 		
-		for ($i=0; $i < $this->intentos;$i++) {
+		for ($i=0; $i < $this->intentos; $i++) {
 			$int = rand($minimo , $maximo);
 			self::intentos($int);
 		}
@@ -31,16 +30,14 @@ class Loteria {
 		}
 	}
 
-
 	public function __destruct() {
 		if ($this->resultado) {
-			echo "Felicidades, has acertado en " . $this->intentos . "intentos</br>";
+			echo "Felicidades, has acertado en " . $this->intentos . " intentos</br>";
 		}
 		else {
 			echo "Qué lastima, has perdido en " . $this->intentos . " intentos</br>";
 		}
 	}
-
 
 }
 
