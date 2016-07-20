@@ -1,4 +1,8 @@
 <?php
+/*
+public: se puede realizar de todocon el 
+*/
+
 class Facebook {
 	// Atributos
 	public $nombre;
